@@ -62,19 +62,17 @@ const id = computed(() => {
     <div class="content">
       <NuxtLink
         :to="article._path"
-        class="headline"
       >
-        <h1>
+        <h1 class="headline">
           {{ article.title }}
         </h1>
+        <p class="description">
+          {{ article.description }}
+        </p>
+        <time>
+          {{ formatDate(article.date) }}
+        </time>
       </NuxtLink>
-
-      <!-- <p class="description">
-        {{ article.description }}
-      </p> -->
-      <time>
-        {{ formatDate(article.date) }}
-      </time>
     </div>
   </article>
 </template>
@@ -121,7 +119,7 @@ css({
       marginBottom: '{space.4}',
       '.headline': {
         text: '2xl',
-        // marginBottom: '{space.2}',
+        marginBottom: '{space.2}',
         fontWeight: '{fontWeight.semibold}',
         lineClamp: 2,
         '.featured &&': {
@@ -130,7 +128,7 @@ css({
         },
       },
       '.description': {
-        marginBottom: '{space.4}',
+        // marginBottom: '{space.2}',
         lineClamp: 2,
         '.featured &&': {
           lineClamp: 4,
