@@ -1,1 +1,0 @@
-import{l as t,b as n,c as o,a5 as r}from"./BvH-3_hj.js";const a={};function c(e,s){return n(),o("tr",null,[r(e.$slots,"default",{},void 0,!0)])}const d=t(a,[["render",c],["__scopeId","data-v-a305909d"]]);export{d as default};
